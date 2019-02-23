@@ -1,2 +1,4 @@
-# TestProject
-这是测试创建-如果成功就作为LeetCode刷题用
+#LeetCode#
+
+#1. 233. Number of Digit One #
+给定一个整数 n，计算所有小于等于 n 的非负整数中数字 1 出现的个数。
