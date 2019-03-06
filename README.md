@@ -9,3 +9,5 @@
 #4. 414. Third Maximum Number#
 
 #5. 462. Minimum Moves to Equal Array Elements II#
+
+#6. 617. Merge Two Binary Trees#
