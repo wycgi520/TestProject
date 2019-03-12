@@ -11,3 +11,5 @@
 #5. 462. Minimum Moves to Equal Array Elements II#
 
 #6. 617. Merge Two Binary Trees#
+
+# 7. 128. Longest Consecutive Sequence #
