@@ -1,0 +1,27 @@
+class Solution(object):
+    def canPartitionKSubsets(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: bool
+        """
+        _sum = sum(nums)
+        self.lens = len(nums)
+        if _sum % k: return False
+        max_num = max(nums)
+        div = _sum / k
+        if max_num > div: return False
+        nums.sort(reverse=True)
+        target = [div for _ in range(k)]
+        return self.dfs(target, 0, nums, k)
+    
+    def dfs(self, target, index, nums, k):
+        if index == self.lens: return True
+        num = nums[index]
+        for i in range(k):
+            if target[i] >= num:
+                target[i] -= num
+                if self.dfs(target, index+1, nums, k): return True
+                target[i] += num
+        return False
+        
